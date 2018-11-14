@@ -1,3 +1,9 @@
 <%= @player_1_name %> vs <%= @player_2_name %>
 </br>
 <%= @player_2_name %>: 60HP
+</br>
+<form action="/attack" method="get">
+  <label for="attack"><%= @player_1_name %> options:
+  <input type="submit" value="Attack">
+  </label>
+</form>
